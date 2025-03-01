@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Board Blogs -Programming-Hero-Assignment5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#F4F7FF] poppins-regular">
+    <div class="max-h-full mx-auto container w-10/12 p-4">
+      <!-- Header nav -->
+      <div class="navbar bg-base-100 rounded-lg">
+        <div class="flex-none">
+          <button class=" w-12 h-12 mr-2">
+            <img src="./assets/logo.png" alt="Logo" />
+          </button>
+        </div>
+        <div class="flex-1">
+          <a href="index.html" class="text-xl text-gray-300"
+            >Dev<span class="text-black">Board</span></a
+          >
+        </div>
+        <div class="flex-none">
+          <button class=" px-4 py-2 bg-[#3752FD] rounded-lg text-white">
+            <a href="index.html">Back To Desk</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- main section -->
+
+      <h2 class=" text-center font-bold py-4">Blogs</h2>
+
+        <div class=" bg-white rounded-lg p-6 my-4">
+            <h3 class=" font-bold"> Question-1: What are the different ways to select an element in the DOM?</h3>
+            <div class="border-t-2 border-gray-300 border-dashed my-4"></div>
+
+            <p>we can select different ways select an element in the DOM like..</p>
+            <ul>
+              <li>Select by ID document.getElementById("id")</li>
+              <li>Select by class name document.getElementsByClassName("class")</li>
+              <li>Select by tag name document.getElementsByTagName("tag")</li>
+              <li>Select by css class name but it select just first one document.querySelector("selector")</li>
+              <li>Select by css class name but it select all css selector document.querySelectorAll("selector")</li>
+
+              <li>etc</li>
+            </ul>
+          
+      
+        </div>
+
+        <div class=" bg-white rounded-lg p-6 my-4">
+            <h3 class=" font-bold">  Question-2: What is the difference between innerHTML, innerText, and textContent ??</h3>
+            <div class="border-t-2 border-gray-300 border-dashed my-4"></div>
+
+            <p>When we need to set html inside an element then we can use innerHTML </p>
+            <p>When we need to set text inside an element but ignore html or other text just show text then we can use innerText </p>
+            <p>When we need to set Plaintext inside an element if there any html tags not ignore but show as a plaintext then we can use textContent </p>
+          
+      
+        </div>
+
+        <div class=" bg-white rounded-lg p-6 my-4">
+            <h3 class=" font-bold">Question-3: What is event delegation in the DOM?</h3>
+            <div class="border-t-2 border-gray-300 border-dashed my-4"></div>
+
+            <p>This is one kind of  technique where a parent element handles events for its child elements by taking advantage of event bubbling.</p>
+          
+      
+        </div>
+
+        <div class=" bg-white rounded-lg p-6 my-4">
+            <h3 class=" font-bold">Question-4: What is event bubbling in the DOM?</h3>
+            <div class="border-t-2 border-gray-300 border-dashed my-4"></div>
+
+            <p>when in a event call to a child element its automatically bubble up to his parent ! For example  I have div  with id parent and inside this div i have button id child if i set an event on child and when i click child btn then automatically bubble up to div parent 
+          </p>
+         
+      
+        </div>
+
+        <div class=" bg-white rounded-lg p-6 my-4">
+            <h3 class=" font-bold"> Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+            <div class="border-t-2 border-gray-300 border-dashed my-4"></div>
+
+            <p>Step 1 Create an element</p>
+            <p>let element = document.createElement("p");
+              <br>
+              element.innerText = "Hello World!";
+            </p>
+            <p>Step 2 Add to dom</p>
+            <p>document.body.appendChild(element);
+            </p>
+
+            <p>Step 3 Remove element</p>
+            <p>element.remove();
+            </p>
+          
+      
+        </div>
+
+      
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
